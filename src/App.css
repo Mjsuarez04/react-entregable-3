@@ -2,17 +2,24 @@
     padding: 2em 1.5em;
 }
 
-.app__title {
-    text-align: center;
-    margin-bottom: 0.6em;
-    font-size: 2.5rem;
+.img__container{
+    width: 100%;
+    height: 410px;
+}
+
+.banner__img {
+    object-fit: cover;
+    object-position: left;
+    margin: auto;
+    width: 100%;
+    height: 390px;
 }
 
 .form {
     display: flex;
     justify-content: center;
     height: 1.6em;
-    margin-bottom: 2.5em;
+    margin-bottom: 2em;
 }
 
 .form__input {
@@ -54,7 +61,7 @@
 }
 
 .form__btn {
-    width: 80px;
+    width: 30px;
     border-radius: 0 0.5em 0.5em 0;
     background-color: rgb(113, 167, 33);
     color: white;
@@ -68,10 +75,42 @@
     filter: brightness(1.1);
 }
 
+.sugerencias{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 248, 255);
+    width: 200px;
+    height: fit-content;
+    z-index: 1;
+    border-radius: 0.5em;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border: 1px solid #333;
+    color: black;
+    cursor: pointer;
+}
+
+.lista:hover {
+    background-color: rgb(10, 100, 93);
+}
+
 .app__error {
     text-align: center;
     line-height: 1.8;
     font-weight: 400;
+}
+
+.error__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 350px;
 }
 
 .residents__container {
